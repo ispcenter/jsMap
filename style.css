@@ -1,0 +1,148 @@
+.indexLow {vertical-align: sub; font-size: 0.6em;}
+#panel {
+	background: #555;
+	float: left;
+	text-align: center;
+	border: 2px solid gray;
+	border-radius: 15px;
+	overflow: hidden;
+}
+#figsToggler {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 302px;
+}
+#addFig{display:none;}
+#addFigLabel {
+	background: #9bf490;
+	width:30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: gray;
+	cursor: pointer;
+}
+#figsToggler button {width: 90px; cursor: pointer;}
+.currentFig {background: #F2F5A9;}
+#fig_1_controls {
+	border: 1px solid #555;
+	background: -webkit-linear-gradient(left, #555 0%, #999 10%, #999 90%, #555 100%);
+}
+#diviac{
+	border: 1px solid #555;
+	background: -webkit-linear-gradient(left, #555 0%, #999 10%, #999 90%, #555 100%);
+}
+.colsettable {font-family: 'Play', sans-serif; border-collapse: collapse; margin: auto;}
+.color_but {
+	display: inline-block;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	box-shadow: 0 0 0 1px black;
+	border-radius: 50%;
+}
+.but_black {background: black;}
+.but_red {background: red;}
+.but_blue {background: blue;}
+.but_green {background: green;}
+.but_magenta {background: magenta;}
+.colSelected {box-shadow: 0 0 0 2px yellow;}
+
+#table_u, #table_kpd {margin: 5px;}
+#table_u td, #table_kpd td {
+	/*background: #ACFA58;*/
+	border: 1px solid #555;
+	height: 35px;
+	margin: 1px;
+	font-family: 'Play', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 0.8em;
+	color: #000;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+}
+#table_u td{width: 37px;}
+#table_kpd td {width: 28px;}
+.butL {
+	border-radius: 15px 0 0 15px;
+	background: -webkit-radial-gradient(center right, #ACFA58 50%, #0B6121 86%);
+	padding: 20px;
+}
+.butR {
+	border-radius: 0 15px 15px 0;
+	background: -webkit-radial-gradient(center left, #ACFA58 50%, #0B6121 86%);
+}
+.butO {
+	border-radius: 10px;
+	background: -webkit-radial-gradient(#ACFA58 50%, #0B6121 86%);
+}
+.butI {background: -webkit-linear-gradient(#333 -10%, #ccc 25%, #ccc 75%, #333 110%);}
+.hidden {opacity: 0.25;}
+.off {visibility: hidden;}
+#map {
+	float: left;
+	border: 1px solid black;
+	margin: 0 5px;
+	position: relative;
+}
+#oYlabel {
+	position: absolute;
+	top: 350px;
+	left: -120px;
+	transform: rotate(-90deg);
+}
+svg.cartesian {
+	width: 720px;
+	height: 900px;
+	display:flex;
+	border:1px solid gray;
+	background: #F2F5A9;
+	float: left;
+	transform: scaleY(-1);
+}
+.mainLine {stroke:#000; stroke-linejoin:miter; fill:none; stroke-width: 0.015px;}
+.secondaryLine {stroke:#000; stroke-linejoin:miter; fill:none; stroke-width: 0.007px;}
+.label_U {
+	font-size: 0.09px;
+	text-anchor: start;
+	transform: translate(0,0) scaleY(-1) rotate(30deg);
+}
+.label_K {font-size: 0.08px; transform: scaleY(-1);}
+.label_bg {fill: #F2F5A9; width: 0.18px; height: 0.09px;}
+.axes {stroke: black; stroke-width:0.015;}
+.axesLabels {
+	font-size:0.09px;
+	text-align: center;
+	text-anchor: middle;
+	transform: scaleY(-1);
+}
+.vertName{transform: scaleY(-1) rotate(-90deg);}
+.gridMin {
+	stroke: black;
+	stroke-width:0.002;
+	stroke-linecap:round;
+	stroke-dasharray: 0.01, 0.01;
+}
+.gridMaj {
+	stroke: black;
+	stroke-width:0.005;
+	stroke-dasharray: 0.01, 0.01;
+}
+.gridTick {stroke: black; stroke-width:0.01;}
+.labelsMaj {font-size:0.1px; transform: scaleY(-1); text-anchor: middle;}
+
+/*блок стилей таблицы с данными*/
+td input::placeholder {color: #000;}
+#data {height: 900px; overflow: scroll;}
+#dataTable {border-collapse: collapse;}
+#dataTable td {border: 1px solid gray; width: 40px; height: 18px;}
+#dataTable input {border: none;}
+#data table {border-collapse: collapse;}
+#data td {border: 1px solid gray; width: 40px; height: 18px;}
